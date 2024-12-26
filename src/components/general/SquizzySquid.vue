@@ -361,37 +361,3 @@ export default {
   }
 }
 </script>
-
-<style lang="sass" scoped>
-.squizzy-squid
-  display: flex
-  justify-content: center
-  text-align: center
-  margin: 0.5rem auto
-  max-height: 200px
-  height: 100%
-  @media screen and (max-width: 320px)
-    max-height: 150px
-  & svg
-    width: 100%
-
-#body
-  transform-origin: 50% 50%
-  animation: float 4s infinite ease-in-out forwards
-
-#body-background
-  transform-origin: 50% 50%
-  animation: background 3s 0.5s infinite ease-in-out forwards
-
-@keyframes float
-  0%, 100%
-    transform: translateY(5px) rotate(10deg) scale(0.95)
-  50%
-	  transform: translateY(-5px) rotate(10deg) scale(0.95)
-
-@keyframes background
-  0%, 100%
-    transform: scale(1) rotate(0deg)
-  50%
-	  transform: scale(0.95) rotate(-10deg)
-</style>
